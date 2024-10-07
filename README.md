@@ -41,8 +41,8 @@ The objective of this project is to create an automated solution that fetches re
 1. **Clone the Repository:**
 
    ```bash
-   git clone https://github.com/yourusername/your-repo-name.git
-   cd your-repo-name
+   git clone https://github.com/Jayesh-Gautam/Datamatices-Hackathon.git
+   cd Datamatices-Hackathon
    ```
 
 2. **Set Up Environment:**
@@ -54,30 +54,16 @@ The objective of this project is to create an automated solution that fetches re
    source venv/bin/activate  # On Windows use `venv\Scripts\activate`
    ```
 
-3. **Install Dependencies:**
-
-   ```bash
-   pip install -r requirements.txt
-   ```
-
-4. **Configuration:**
+3. **Configuration:**
 
    - Update the configuration file with your email credentials and Google Form details.
    - Ensure that you have access to the required APIs.
 
-5. **Run the Automation:**
-
-   ```bash
-   python main.py
-   ```
+4. **Run the Automation:**
 
 ### Usage
 
 Once the automation is running, it will periodically check the specified email inbox for new receipts, extract the required details, and submit them to the Google Form. Notifications will be sent to the finance team as specified.
-
-### Contributing
-
-We welcome contributions! Please feel free to fork the repository, make changes, and submit a pull request.
 
 ### License
 
@@ -86,14 +72,10 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 ### Acknowledgments
 
 - Datamatics for providing the TruBot and TruCap+ tools.
-- [Any other libraries or tools you wish to acknowledge]
 
 ### Contact
 
 For any inquiries, please contact:
-- [Your Name] - [Your Email]
-- [Team Member Name] - [Team Member Email]
-
----
-
-Feel free to customize any sections, particularly the installation and configuration steps, based on your project specifics!
+- Jayesh Gautam - gjayesh007@gmail.com
+- Rikin Parekh - rikinparekh15147@gmail.com
+- Rudra Patel - rudrapatel3504@gmail.com

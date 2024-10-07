@@ -66,10 +66,6 @@ The objective of this project is to create an automated solution that fetches re
 
 Once the automation is running, it will periodically check the specified email inbox for new receipts, extract the required details, and submit them to the Google Form. Notifications will be sent to the finance team as specified.
 
-### License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
 ### Acknowledgments
 
 - Datamatics for providing the TruBot and TruCap+ tools.

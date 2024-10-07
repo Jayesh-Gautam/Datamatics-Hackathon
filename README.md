@@ -1,7 +1,7 @@
 # Datamatics-Hackathon
 Welcome to our GitHub repository for the Datamatics Hackathon! Our team, Data-230436 <br>
 Presentation Link <br>
-<a herf="https://www.canva.com/design/DAGS6aQkviE/bO5Z2RO3K-RzjhwpSEqiVQ/edit?utm_content=DAGS6aQkviE&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton"-->View our presentation here</a>
+<a herf="https://www.canva.com/design/DAGS6aQkviE/bO5Z2RO3K-RzjhwpSEqiVQ/edit?utm_content=DAGS6aQkviE&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton">View our presentation here</a>
 # README
 
 ## Project Title: Food and Petrol Bill Receipt Automation

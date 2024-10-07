@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ArrayOfVariables xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Version="5.4.0.21668">
+  <Variables name="Variable">
+    <Variable>
+      <Name>QueueName</Name>
+      <Type>String</Type>
+      <Value>"NeelamQueue"</Value>
+      <Script />
+      <IsScraping>false</IsScraping>
+      <Direction>Out</Direction>
+      <IsCollection>false</IsCollection>
+      <Parameterized>true</Parameterized>
+      <Category>-1</Category>
+      <ProcessParameter>QueueName</ProcessParameter>
+      <ProcessParameterType>String</ProcessParameterType>
+      <IsOldParameter>false</IsOldParameter>
+      <DuplicateParameterName />
+    </Variable>
+  </Variables>
+  <Variables name="ExcelReader">
+  </Variables>
+  <Variables name="CSVText">
+  </Variables>
+  <Variables name="DataTable">
+  </Variables>
+  <Variables name="Configuration">
+  </Variables>
+  <Variables name="Parameter">
+  </Variables>
+</ArrayOfVariables>

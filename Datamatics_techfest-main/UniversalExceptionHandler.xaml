@@ -1,0 +1,83 @@
+﻿<Activity mc:Ignorable="sap sap2010 sads" x:Class="TruBotDesigner.Workflow"
+ xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities"
+ xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+ xmlns:sads="http://schemas.microsoft.com/netfx/2010/xaml/activities/debugger"
+ xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation"
+ xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation"
+ xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib"
+ xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=mscorlib"
+ xmlns:tca="clr-namespace:TruBot.Core.Activities;assembly=TruBot.Core.Activities"
+ xmlns:tca1="clr-namespace:TruBot.Cockpit.Activities;assembly=TruBot.Cockpit.Activities"
+ xmlns:tm="clr-namespace:TruBotExecutor.Model;assembly=TruBotExecutor"
+ xmlns:wi="clr-namespace:WFCommonLibrary.Interface;assembly=WFCommonLibrary"
+ xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <x:Members>
+    <x:Property Name="errorInfo" Type="InArgument(tm:FaultHandlingArgs)" />
+    <x:Property Name="result" Type="OutArgument(wi:IErrorActionInfo)" />
+  </x:Members>
+  <sap2010:WorkflowViewState.IdRef>TruBotDesigner.Workflow_1</sap2010:WorkflowViewState.IdRef>
+  <TextExpression.NamespacesForImplementation>
+    <sco:Collection x:TypeArguments="x:String">
+      <x:String>WorkflowExecutorExtensions</x:String>
+      <x:String>WFCommonLibrary.Interface</x:String>
+      <x:String>TruBotExecutor.Model</x:String>
+      <x:String>System.Activities</x:String>
+      <x:String>System</x:String>
+    </sco:Collection>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <sco:Collection x:TypeArguments="AssemblyReference">
+      <AssemblyReference>TruBotExecutor</AssemblyReference>
+      <AssemblyReference>WFCommonLibrary</AssemblyReference>
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.ServiceModel</AssemblyReference>
+      <AssemblyReference>System.ValueTuple</AssemblyReference>
+      <AssemblyReference>TruBot.Cryptography</AssemblyReference>
+      <AssemblyReference>TruBot.Email</AssemblyReference>
+      <AssemblyReference>TruBot.FTP.Activities</AssemblyReference>
+      <AssemblyReference>TruBot.PDF</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Composition</AssemblyReference>
+      <AssemblyReference>System.Runtime.WindowsRuntime</AssemblyReference>
+    </sco:Collection>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence DisplayName="Exception Handler" sap2010:WorkflowViewState.IdRef="Sequence_1">
+    <Sequence.Variables>
+      <Variable x:TypeArguments="x:Int32" Default="0" Name="retry" />
+    </Sequence.Variables>
+    <tca:LogMessage DisplayName="Log Message" sap2010:WorkflowViewState.IdRef="LogMessage_1" Level="Error" Message="[errorInfo.Exception.ToString()]" Pause="True" />
+    <If Condition="[errorInfo.RetryCount = 0]" sap2010:WorkflowViewState.IdRef="If_1">
+      <If.Then>
+        <tca:CaptureScreenShot FilePath="{x:Null}" Screenshot="{x:Null}" sap2010:WorkflowViewState.IdRef="CaptureScreenShot_1" Pause="False" />
+      </If.Then>
+    </If>
+    <tca:ActionOnException DisplayName="Action On Exception" FinalAction="Abort" sap2010:WorkflowViewState.IdRef="ActionOnException_1" Pause="True" Result="[result]" RetryCount="3" RetryInterval="5" />
+    <If Condition="[errorInfo.RetryCount = 0]" sap2010:WorkflowViewState.IdRef="If_2">
+      <If.Then>
+        <tca1:NotifyUser CC="{x:Null}" EmailBody="{x:Null}" EmailSubject="{x:Null}" ScreenshotPath="{x:Null}" To="{x:Null}" Attachments="False" DisplayName="Notify User" Email="False" sap2010:WorkflowViewState.IdRef="NotifyUser_2" Pause="True" />
+      </If.Then>
+    </If>
+    <sads:DebugSymbol.Symbol>d1lDOlxVc2Vyc1xuZWVsYW0uZHViZXlcVHJ1Qm90XFF1ZXVlIFRyYW5zYWN0aW9ucyBQcm9jZXNzaW5nXFVuaXZlcnNhbEV4Y2VwdGlvbkhhbmRsZXIueGFtbA4vA0AOAgEBMTMxNgIBAjMFM6YBAgEONAU4CgIBCzkFOcoBAgEGOgU+CgIBAzN0M5YBAgEPNBM0LwIBDDYJNpABAgENObIBObUBAgEKOZwBOaYBAgEIOcQBOccBAgEHOhM6LwIBBDwJPPcBAgEF</sads:DebugSymbol.Symbol>
+  </Sequence>
+  <sap2010:WorkflowViewState.ViewStateManager>
+    <sap2010:ViewStateManager>
+      <sap2010:ViewStateData Id="LogMessage_1" sap:VirtualizedContainerService.HintSize="461,86" />
+      <sap2010:ViewStateData Id="CaptureScreenShot_1" sap:VirtualizedContainerService.HintSize="200,22" />
+      <sap2010:ViewStateData Id="If_1" sap:VirtualizedContainerService.HintSize="461,208" />
+      <sap2010:ViewStateData Id="ActionOnException_1" sap:VirtualizedContainerService.HintSize="461,115" />
+      <sap2010:ViewStateData Id="NotifyUser_2" sap:VirtualizedContainerService.HintSize="250,96" />
+      <sap2010:ViewStateData Id="If_2" sap:VirtualizedContainerService.HintSize="461,244" />
+      <sap2010:ViewStateData Id="Sequence_1" sap:VirtualizedContainerService.HintSize="480,897">
+        <sap:WorkflowViewStateService.ViewState>
+          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+          </scg:Dictionary>
+        </sap:WorkflowViewStateService.ViewState>
+      </sap2010:ViewStateData>
+      <sap2010:ViewStateData Id="TruBotDesigner.Workflow_1" sap:VirtualizedContainerService.HintSize="520,977" />
+    </sap2010:ViewStateManager>
+  </sap2010:WorkflowViewState.ViewStateManager>
+</Activity>

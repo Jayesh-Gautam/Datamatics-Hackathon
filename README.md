@@ -51,21 +51,12 @@ The objective of this project is to create an automated solution that fetches re
    cd Datamatices-Hackathon
    ```
 
-2. **Set Up Environment:**
-
-   Ensure you have Python and the necessary libraries installed. You can create a virtual environment using:
-
-   ```bash
-   python -m venv venv
-   source venv/bin/activate  # On Windows use `venv\Scripts\activate`
-   ```
-
-3. **Configuration:**
+2. **Configuration:**
 
    - Update the configuration file with your email credentials and Google Form details.
    - Ensure that you have access to the required APIs.
 
-4. **Run the Automation:**
+3. **Run the Automation:**
 
 ### Usage
 

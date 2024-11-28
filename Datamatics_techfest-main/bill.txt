@@ -1,0 +1,14 @@
+Chat House
+Address: Sector-12,Gandhinagar GST/IN: ESPPXX0998
+Buyer: Jayesh Gautam
+Seller: Chat House Gandhinagar
+Date: 6/10/2024
+Tax Invoice
+Sr. No. Description Rate Quantity Amount
+1 Samosa 25 3 75
+2 Aloo Chat 50 2 100
+3 Bhel 50 1 50
+Total 225
+Payment Mode: Upi
+Payment Status: Paid
+(Note: This is a computerised bill, no signature needed)

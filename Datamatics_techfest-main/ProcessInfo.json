@@ -1,0 +1,66 @@
+{
+  "Name": "gmail",
+  "Dependencies": {
+    "TruBot.Contracts": "5.0.0",
+    "TruBot.Activities.Contracts": "5.0.0",
+    "TruBot.Activities.Design.Base": "5.0.0",
+    "TruBot.Recorder.Activities": "5.0.0",
+    "Trubot.Excel.Activities": "5.0.0",
+    "TruBot.ActiveDirectoryServices.Activities": "5.0.0",
+    "TruBot.Cockpit.Activities": "5.0.0",
+    "TruBot.Cryptography.Activities": "5.0.0",
+    "TruBot.Database.Activities": "5.0.0",
+    "TruBot.Email.Activities": "5.0.0",
+    "TruBot.FTP.Activities": "5.0.0",
+    "TruBot.GoogleApp.Activities": "5.0.0",
+    "TruBot.SAP.API.Activities": "5.0.0",
+    "TruBot.Web.Activities": "5.0.0",
+    "TruBot.WordDoc.Activities": "5.0.0",
+    "Trubot.Core.Activities": "5.0.0",
+    "TruBot.PDF.Activities": "5.0.0",
+    "TruBot.SalesforceCRM.Activities": "5.0.0",
+    "TruBot.Microsoft365.Activities": "5.0.0",
+    "TruBot.AWS": "5.0.0",
+    "TruBot.AWS.Activities": "5.0.0",
+    "TruBot.QRCode.Activities": "5.0.0",
+    "TruBot.TruCap.Activities": "5.0.0",
+    "TruBot.Python.Activities": "5.0.0"
+  },
+  "Description": "",
+  "Main": "Default.xaml",
+  "SchemaVersion": "5.0.0.18425",
+  "StudioVersion": "5.0.0.18425",
+  "ProjectVersion": "1.0.0.0",
+  "RuntimeOptions": null,
+  "ProjectType": "Workflow",
+  "OutputFileName": "AgentOP.txt",
+  "WorkflowDocumentList": [
+    {
+      "WorkflowName": "Default.xaml"
+    },
+    {
+      "WorkflowName": "NewSequence1.xaml"
+    },
+    {
+      "WorkflowName": "NewFlowchart1.xaml"
+    }
+  ],
+  "ExternalReferencesList": [],
+  "CreatedDateTime": "16-11-2024 03:57:01 PM",
+  "ModifiedDateTime": "26-11-2024 03:11:53 PM",
+  "IsDependencyUpdated": true,
+  "NativePlayback": true,
+  "Selector": true,
+  "MainExceptionHandler": "",
+  "ExceptionHandlerList": [],
+  "ProcessCoreItems": [
+    {
+      "FileName": "SecurityInfo.json"
+    }
+  ],
+  "DomSelectorSecureFlag": true,
+  "UsedTemplateType": 0,
+  "UsedTemplateName": "None",
+  "IsDesktopRecorderForIE": true,
+  "ExportedVersion": "1.0.0.0"
+}

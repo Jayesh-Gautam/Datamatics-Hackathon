@@ -38,7 +38,6 @@ The objective of this project is to create an automated solution that fetches re
 
 - **Datamatics TruBot**
 - **Datamatics TruCap+**
-- **Python** (for automation scripting)
 - **Google APIs** (for Google Form integration)
 - **Gmail API** (for fetching emails)
 
